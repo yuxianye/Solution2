@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solution.AppShell", "Solution.AppShell\Solution.AppShell.csproj", "{63F51C45-C208-473A-AC84-6DB9B7AB1D4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solution.Device.Core", "Solution.Device.Core\Solution.Device.Core.csproj", "{C76C7C1A-2FC6-49A6-BC3A-57BD5451BBE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solution.Device.OpcUaDevice", "Solution.Device.OpcUaDevice\Solution.Device.OpcUaDevice.csproj", "{240F10C1-DE7C-449B-8A33-B8017C0395D3}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63F51C45-C208-473A-AC84-6DB9B7AB1D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63F51C45-C208-473A-AC84-6DB9B7AB1D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63F51C45-C208-473A-AC84-6DB9B7AB1D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63F51C45-C208-473A-AC84-6DB9B7AB1D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C76C7C1A-2FC6-49A6-BC3A-57BD5451BBE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C76C7C1A-2FC6-49A6-BC3A-57BD5451BBE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C76C7C1A-2FC6-49A6-BC3A-57BD5451BBE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C76C7C1A-2FC6-49A6-BC3A-57BD5451BBE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{240F10C1-DE7C-449B-8A33-B8017C0395D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{240F10C1-DE7C-449B-8A33-B8017C0395D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{240F10C1-DE7C-449B-8A33-B8017C0395D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{240F10C1-DE7C-449B-8A33-B8017C0395D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

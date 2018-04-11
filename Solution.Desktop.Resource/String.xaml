@@ -1,0 +1,478 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="AppName">慧远制造执行系统</sys:String>
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--每个页面单独配置-->
+    <!--MainView-->
+    <!--患者管理-->
+    <sys:String x:Key="PatientManagement">患者管理</sys:String>
+    <sys:String x:Key="PatientList">患者列表</sys:String>
+    <sys:String x:Key="PatientListToolTip">显示患者列表</sys:String>
+    <sys:String x:Key="PatientListRefresh">刷新列表</sys:String>
+    <sys:String x:Key="PatientListRefreshToolTip">刷新患者列表</sys:String>
+    <sys:String x:Key="PatientAdd">新增患者</sys:String>
+    <sys:String x:Key="PatientAddToolTip">新增患者</sys:String>
+    <sys:String x:Key="PatientEdit">编辑患者</sys:String>
+    <sys:String x:Key="PatientEditToolTip">编辑患者</sys:String>
+    <sys:String x:Key="PatientDelete">删除患者</sys:String>
+    <sys:String x:Key="PatientDeleteToolTip">删除患者</sys:String>
+    <sys:String x:Key="PatientSearch">患者搜索</sys:String>
+    <sys:String x:Key="PatientSearchToolTip">按条件搜索患者</sys:String>
+    <!--<sys:String x:Key="PatientSearchFirstName">姓</sys:String>
+    <sys:String x:Key="PatientSearchLastName">名</sys:String>
+    <sys:String x:Key="PatientSearchDateOfBirth">出生日期</sys:String>
+    <sys:String x:Key="PatientSearchAge">年龄</sys:String>
+    <sys:String x:Key="PatientSearchWeight">体重(kg)</sys:String>
+    <sys:String x:Key="PatientSearchHeight">身高(cm)</sys:String>
+    <sys:String x:Key="PatientSearchBMI">BMI</sys:String>
+    <sys:String x:Key="PatientSearchGender">性别</sys:String>
+    <sys:String x:Key="PatientSearchEMail">邮箱</sys:String>
+    <sys:String x:Key="PatientSearchTelephoneNumbers">电话号码</sys:String>
+    <sys:String x:Key="PatientSearchPostalCode">邮编</sys:String>
+    <sys:String x:Key="PatientSearchAddress">地址</sys:String>
+    <sys:String x:Key="PatientSearchDiagnosis">病症</sys:String>-->
+
+    <!--医生管理-->
+    <sys:String x:Key="DoctorManagement">医生管理</sys:String>
+    <sys:String x:Key="DoctorList">医生列表</sys:String>
+    <sys:String x:Key="DoctorListToolTip">显示医生列表</sys:String>
+    <sys:String x:Key="DoctorListRefresh">刷新列表</sys:String>
+    <sys:String x:Key="DoctorListRefreshToolTip">刷新医生列表</sys:String>
+    <sys:String x:Key="DoctorAdd">新增医生</sys:String>
+    <sys:String x:Key="DoctorAddToolTip">新增医生</sys:String>
+    <sys:String x:Key="DoctorEdit">编辑医生</sys:String>
+    <sys:String x:Key="DoctorEditToolTip">编辑医生</sys:String>
+    <sys:String x:Key="DoctorDelete">删除医生</sys:String>
+    <sys:String x:Key="DoctorDeleteToolTip">删除医生</sys:String>
+    <sys:String x:Key="DoctorSearch">医生搜索</sys:String>
+    <sys:String x:Key="DoctorSearchToolTip">按条件搜索患者医生</sys:String>
+    <!--<sys:String x:Key="DoctorSearchFirstName">姓</sys:String>
+    <sys:String x:Key="DoctorSearchLastName">名</sys:String>-->
+
+    <!--数据下载-->
+    <sys:String x:Key="DownloadData">数据下载</sys:String>
+    <sys:String x:Key="Open">打开本地数据</sys:String>
+    <sys:String x:Key="Import">导入U盘数据</sys:String>
+    <sys:String x:Key="DownloadCompleted">下载已完成</sys:String>
+    <sys:String x:Key="DownloadCanceled">下载已关闭</sys:String>
+    <sys:String x:Key="DownloadProgress">下载进度</sys:String>
+
+    <sys:String x:Key="OpenFileDialogTitle">打开Respircare文件</sys:String>
+    <sys:String x:Key="RMSFileFilter">(Respircare flies)|*.TXT</sys:String>
+
+    <!--系统设置-->
+    <sys:String x:Key="SystemSettings">系统设置</sys:String>
+    <sys:String x:Key="SystemParameter">系统参数设置</sys:String>
+    <sys:String x:Key="SwitchLanguage">切换界面语言</sys:String>
+
+    <!--帮助-->
+    <sys:String x:Key="HelpToolTip">打开帮助文档</sys:String>
+
+    <!--PatientListView-->
+    <sys:String x:Key="PatientListView_PatientCount">患者数:</sys:String>
+
+    <!--PatientAddView-->
+    <sys:String x:Key="AddPatient">新增患者</sys:String>
+    <sys:String x:Key="FirstName">姓</sys:String>
+    <sys:String x:Key="FirstName2">姓*</sys:String>
+    <sys:String x:Key="LastName">名</sys:String>
+    <sys:String x:Key="LastName2">名*</sys:String>
+    <sys:String x:Key="DateOfBirth">出生日期</sys:String>
+    <sys:String x:Key="Age">年龄</sys:String>
+    <sys:String x:Key="Weight">体重(kg)</sys:String>
+    <sys:String x:Key="Height">身高(cm)</sys:String>
+    <sys:String x:Key="BMI">BMI</sys:String>
+    <sys:String x:Key="Gender">性别</sys:String>
+    <sys:String x:Key="EMail">邮箱</sys:String>
+    <sys:String x:Key="TelephoneNumbers">电话号码</sys:String>
+    <sys:String x:Key="PostalCode">邮编</sys:String>
+    <sys:String x:Key="Address">地址</sys:String>
+    <sys:String x:Key="Diagnosis">病症</sys:String>
+    <sys:String x:Key="Doctor">医生</sys:String>
+    <sys:String x:Key="SerialNumber">序列号</sys:String>
+    <sys:String x:Key="SerialNumber2">序列号*</sys:String>
+    <sys:String x:Key="FirstNameValidationRequired">必填,长度不能超过16个字符</sys:String>
+    <sys:String x:Key="LastNameValidationRequired">必填,长度不能超过16个字符</sys:String>
+    <sys:String x:Key="WeightValidation">体重应该在0-255kg之间</sys:String>
+    <sys:String x:Key="HeightValidation">身高应该在0-255cm之间</sys:String>
+    <sys:String x:Key="TelephoneNumbersValidation">长度不能超过32个字符</sys:String>
+    <sys:String x:Key="EMailValidationLength">长度不能超过32个字符</sys:String>
+    <sys:String x:Key="EMailValidationFormat">邮箱格式不正确,正确格式例如:132456.qq.com</sys:String>
+    <sys:String x:Key="PostalCodeValidation">长度不能超过16个字符</sys:String>
+    <sys:String x:Key="AddressValidation">长度不能超过128个字符</sys:String>
+    <sys:String x:Key="DiagnosisValidation">长度不能超过128个字符</sys:String>
+    <sys:String x:Key="SerialNumberValidation">必填,序列号为18个数字</sys:String>
+
+    <sys:String x:Key="DeletePatient">删除患者</sys:String>
+    <sys:String x:Key="EditPatient">编辑患者</sys:String>
+
+    <!--SystemParameterSettingView-->
+    <sys:String x:Key="SystemParameterSettingView_Title">系统参数设置</sys:String>
+
+    <!--DoctorListView-->
+    <sys:String x:Key="DoctorCount">医生数:</sys:String>
+    <sys:String x:Key="PatientCount">患者数:</sys:String>
+
+    <!--DoctorAddView-->
+    <sys:String x:Key="AddDoctor">新增医生</sys:String>
+
+    <!--DoctorEditView-->
+    <sys:String x:Key="EditDoctor">编辑医生</sys:String>
+
+    <!--DoctorDeleteView-->
+    <sys:String x:Key="DeleteDoctor">删除医生</sys:String>
+
+    <!--<sys:String x:Key="FirstNameValidationRequired">姓不能为空,长度不能超过16个字符</sys:String>-->
+    <!--<sys:String x:Key="LastNameValidationRequired">名不能为空,长度不能超过16个字符</sys:String>-->
+    <!--<sys:String x:Key="DeleteMessage">有患者需要医生治疗，不能删除。</sys:String>-->
+    <sys:String x:Key="PatientDeleteMessage">患者信息(患者信息和使用数据)删除后不能恢复，请慎重操作。</sys:String>
+    <sys:String x:Key="DoctorDeleteMessage">有患者需要医生治疗，不能删除。</sys:String>
+    <sys:String x:Key="DoctorDeleteMessage2">医生信息删除后不能恢复，请慎重操作。</sys:String>
+
+    <!--SwitchLanguageView-->
+    <sys:String x:Key="Title">切换界面语言</sys:String>
+    <sys:String x:Key="LanguageMessage">请选择显示语言，然后点击[确定]按钮.</sys:String>
+    <sys:String x:Key="LanguageMessage1">点击[确定]按钮立即生效.</sys:String>
+
+    <!--HelpView-->
+    <sys:String x:Key="HelpTitle">迈思患者管理系统-帮助</sys:String>
+
+    <!--Public Buttons-->
+    <sys:String x:Key="Confirm">确定</sys:String>
+    <sys:String x:Key="Cancel">取消</sys:String>
+    <sys:String x:Key="WithoutData">没有相关数据!</sys:String>
+    <sys:String x:Key="Selected">选中</sys:String>
+
+    <sys:String x:Key="PageSizeError">PageIndex或者PageSize错误，PageIndex：大于零的整数；PageSize：1-32767</sys:String>
+    <sys:String x:Key="Error">错误</sys:String>
+    <sys:String x:Key="DataAccessError">数据访问错误</sys:String>
+    <sys:String x:Key="Male">男</sys:String>
+    <sys:String x:Key="Female">女</sys:String>
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <!--PatientListView-->
+
+    <!--<sys:String x:Key="Query">查询</sys:String>
+    <sys:String x:Key="PatientSearch">患者搜索</sys:String>-->
+
+    <!--<sys:String x:Key="Help">使用帮助</sys:String>
+    <sys:String x:Key="HelpTitle">迈思患者管理系统-帮助</sys:String>-->
+
+    <!--与界面显示有关的字符-->
+    <!--Common-->
+    <!--<sys:String x:Key="Year">年</sys:String>
+    <sys:String x:Key="Month1">1月</sys:String>
+    <sys:String x:Key="Month2">2月</sys:String>
+    <sys:String x:Key="Month3">3月</sys:String>
+    <sys:String x:Key="Month4">4月</sys:String>
+    <sys:String x:Key="Month5">5月</sys:String>
+    <sys:String x:Key="Month6">6月</sys:String>
+    <sys:String x:Key="Month7">7月</sys:String>
+    <sys:String x:Key="Month8">8月</sys:String>
+    <sys:String x:Key="Month9">9月</sys:String>
+    <sys:String x:Key="Month10">10月</sys:String>
+    <sys:String x:Key="Month11">11月</sys:String>
+    <sys:String x:Key="Month12">12月</sys:String>
+    <sys:String x:Key="Week0">日</sys:String>
+    <sys:String x:Key="Week1">一</sys:String>
+    <sys:String x:Key="Week2">二</sys:String>
+    <sys:String x:Key="Week3">三</sys:String>
+    <sys:String x:Key="Week4">四</sys:String>
+    <sys:String x:Key="Week5">五</sys:String>
+    <sys:String x:Key="Week6">六</sys:String>
+    <sys:String x:Key="Hour">小时</sys:String>
+    <sys:String x:Key="Selected">选中</sys:String>
+    <sys:String x:Key="MilliSecFor24Hour">24小时</sys:String>
+    <sys:String x:Key="MilliSecFor12Hour">12小时</sys:String>
+    <sys:String x:Key="MilliSecFor10Hour">10小时</sys:String>
+    <sys:String x:Key="MilliSecFor8Hour">8小时</sys:String>
+    <sys:String x:Key="MilliSecFor5Hour">5小时</sys:String>
+    <sys:String x:Key="MilliSecFor2Hour">2小时</sys:String>
+    <sys:String x:Key="MilliSecForOneHour">1小时</sys:String>
+    <sys:String x:Key="MilliSecForHalfHour">30分钟</sys:String>
+    <sys:String x:Key="MilliSecFor10Minutes">10分钟</sys:String>
+    <sys:String x:Key="MilliSecFor5Minutes">5分钟</sys:String>
+    <sys:String x:Key="MilliSecForOneMinutes">1分钟</sys:String>
+    <sys:String x:Key="MilliSecForHalfMinutes">30秒</sys:String>
+    <sys:String x:Key="MilliSecFor10Sec">10秒</sys:String>
+    <sys:String x:Key="Error">错误</sys:String>
+    <sys:String x:Key="DataAccessError">数据访问错误</sys:String>
+    <sys:String x:Key="DbUpdateException">数据更新错误</sys:String>
+    <sys:String x:Key="WithoutData">没有相关数据!</sys:String>
+    <sys:String x:Key="FileFormatError">文件为空或者格式错误</sys:String>
+    <sys:String x:Key="RMSFileFormatError">【{0}】文件为空或者格式错误</sys:String>
+    <sys:String x:Key="DownloadError">下载错误:</sys:String>
+    <sys:String x:Key="DownloadCanceled">下载已关闭</sys:String>
+    <sys:String x:Key="DownloadCompleted">下载已完成</sys:String>
+    <sys:String x:Key="DownloadProgress">下载进度</sys:String>
+    <sys:String x:Key="DataFileFilter">??????.DAT</sys:String>
+    <sys:String x:Key="DataFileFilter2">.DAT</sys:String>
+    <sys:String x:Key="ProductNotExist">产品未找到</sys:String>
+    <sys:String x:Key="DataFileNotFound">未找到数据文件</sys:String>
+    <sys:String x:Key="IndexFileNotFound">未找到文件{0},是否接续查找其他移动存储？</sys:String>
+    <sys:String x:Key="TimeRangeError">最多能查询一年的数据。</sys:String>
+    <sys:String x:Key="SaveAsComplete">保存成功：{0}</sys:String>
+    <sys:String x:Key="StatisticsReportTitle">统计报告</sys:String>
+    <sys:String x:Key="Name">患者姓名</sys:String>
+    <sys:String x:Key="ReportCreateTime">生成时间</sys:String>
+    <sys:String x:Key="AdviseValidationRequired">医嘱建议不能超过2000个字符</sys:String>-->
+
+    <!--Common-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--Patient Doctor-->
+    <!--<sys:String x:Key="AddPatient">新增患者</sys:String>
+    <sys:String x:Key="AddDoctor">新增医生</sys:String>
+    <sys:String x:Key="EditPatient">编辑患者</sys:String>
+    <sys:String x:Key="EditDoctor">编辑医生</sys:String>
+    <sys:String x:Key="DeletePatient">删除患者</sys:String>
+    <sys:String x:Key="DeleteDoctor">删除医生</sys:String>
+    <sys:String x:Key="FirstName">姓</sys:String>
+    <sys:String x:Key="LastName">名</sys:String>
+    <sys:String x:Key="DateOfBirth">出生日期</sys:String>
+    <sys:String x:Key="Age">年龄</sys:String>
+    <sys:String x:Key="Weight">体重(kg)</sys:String>
+    <sys:String x:Key="Height">身高(cm)</sys:String>
+    <sys:String x:Key="BMI">BMI</sys:String>
+    <sys:String x:Key="Gender">性别</sys:String>
+    <sys:String x:Key="EMail">邮箱</sys:String>
+    <sys:String x:Key="TelephoneNumbers">电话号码</sys:String>
+    <sys:String x:Key="PostalCode">邮编</sys:String>
+    <sys:String x:Key="Address">地址</sys:String>
+    <sys:String x:Key="Diagnosis">病症</sys:String>
+    <sys:String x:Key="Doctor">医生</sys:String>
+    <sys:String x:Key="Male">男</sys:String>
+    <sys:String x:Key="Female">女</sys:String>
+    <sys:String x:Key="PatientCount">患者数:</sys:String>
+    <sys:String x:Key="DoctorCount">医生数:</sys:String>
+    <sys:String x:Key="FirstNameValidationRequired">姓不能为空,长度不能超过32个字符</sys:String>
+    <sys:String x:Key="LastNameValidationRequired">名不能为空,长度不能超过32个字符</sys:String>
+    <sys:String x:Key="FirstNameValidationLength">长度不能超过32个字符</sys:String>
+    <sys:String x:Key="LastNameValidationLength">长度不能超过32个字符</sys:String>
+    <sys:String x:Key="WeightValidation">体重应该在0-255kg之间</sys:String>
+    <sys:String x:Key="HeightValidation">身高应该在0-255cm之间</sys:String>
+    <sys:String x:Key="TelephoneNumbersValidation">长度不能超过32个字符</sys:String>
+    <sys:String x:Key="EMailValidationLength">长度不能超过32个字符</sys:String>
+    <sys:String x:Key="EMailValidationFormat">邮箱格式不正确</sys:String>
+    <sys:String x:Key="PostalCodeValidation">长度不能超过32个字符</sys:String>
+    <sys:String x:Key="AddressValidation">长度不能超过128个字符</sys:String>
+    <sys:String x:Key="DiagnosisValidation">长度不能超过32个字符</sys:String>
+    <sys:String x:Key="SerialNumberValidation">序列号为18个数字</sys:String>
+    <sys:String x:Key="PatientDeleteMessage">患者信息(患者信息和使用数据)删除后不能恢复，请慎重操作。</sys:String>
+    <sys:String x:Key="DoctorDeleteMessage">有患者需要医生治疗，不能删除。</sys:String>-->
+    <!--Patient Doctor-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--ProductConfig-->
+    <!--<sys:String x:Key="ProductConfig">产品配置</sys:String>
+    <sys:String x:Key="Parameter">参数</sys:String>
+    <sys:String x:Key="Alert1">报警</sys:String>
+    <sys:String x:Key="Config">配置</sys:String>
+    <sys:String x:Key="RiseTime">上升时间(秒)</sys:String>
+    <sys:String x:Key="InspireTime">吸气时间(秒)</sys:String>
+    <sys:String x:Key="ITrigger">吸气灵敏度</sys:String>
+    <sys:String x:Key="ETrigger">呼气灵敏度</sys:String>
+    <sys:String x:Key="Ramp">延时升压(分钟)</sys:String>
+    <sys:String x:Key="ExhaleTime">呼气时间(秒)</sys:String>
+    <sys:String x:Key="IPAPMax">IPAP Max(cmH2O)</sys:String>
+    <sys:String x:Key="EPAPMin">EPAP Min(cmH2O)</sys:String>
+    <sys:String x:Key="PSMax">PS Max(cmH2O)</sys:String>
+    <sys:String x:Key="PSMin">PS Min(cmH2O)</sys:String>
+    <sys:String x:Key="CPAP">CPAP(cmH2O)</sys:String>
+    <sys:String x:Key="CFlex">舒适程度</sys:String>
+    <sys:String x:Key="CPAPStart">CPAP Start(cmH2O)</sys:String>
+    <sys:String x:Key="CPAPMax">CPAP Max(cmH2O)</sys:String>
+    <sys:String x:Key="CPAPMin">CPAP Min(cmH2O)</sys:String>
+    <sys:String x:Key="Alert">报警总开关</sys:String>
+    <sys:String x:Key="Alert_Tube">管路报警</sys:String>
+    <sys:String x:Key="Alert_Apnea">窒息报警(秒)</sys:String>
+    <sys:String x:Key="Alert_MinuteVentilation">分钟通气量报警(升/分钟)</sys:String>
+    <sys:String x:Key="Alert_HRate">高呼吸频率报警(次/分钟)</sys:String>
+    <sys:String x:Key="Alert_LRate">低呼吸频率报警(次/分钟)</sys:String>
+    <sys:String x:Key="Config_HumidifierLevel">湿化器档位配置</sys:String>
+    <sys:String x:Key="Config_DataStore">数据保存配置</sys:String>
+    <sys:String x:Key="Config_SmartStart">智能启动配置</sys:String>
+    <sys:String x:Key="Config_PressureUnit">压力单位配置</sys:String>
+    <sys:String x:Key="Config_Language">语言配置</sys:String>
+    <sys:String x:Key="Config_Backlight">背光模式配置</sys:String>
+    <sys:String x:Key="Config_MaskPressure">面罩压力配置</sys:String>
+    <sys:String x:Key="Config_ClinicalSet">临床设置配置</sys:String>
+    <sys:String x:Key="CurrentTime">时间</sys:String>-->
+    <!--ValueConverter-->
+    <!--<sys:String x:Key="SwitchClose">关</sys:String>
+    <sys:String x:Key="SwitchOpen">开</sys:String>
+    <sys:String x:Key="Unknown">未知</sys:String>
+    <sys:String x:Key="SwitchAuto">自动</sys:String>
+    <sys:String x:Key="zh-CN">中文</sys:String>
+    <sys:String x:Key="en-US">英文</sys:String>
+    <sys:String x:Key="Bright">常亮</sys:String>
+    <sys:String x:Key="Darken">渐暗</sys:String>
+    <sys:String x:Key="cmH2O">cmH2O</sys:String>
+    <sys:String x:Key="kPa">kPa</sys:String>
+    <sys:String x:Key="hPa">hPa</sys:String>-->
+    <!--ProductConfig-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--Usage-->
+    <!--<sys:String x:Key="DataRange">数据区间</sys:String>
+    <sys:String x:Key="DaysWithProductUsage">使用天数(天)</sys:String>
+    <sys:String x:Key="DaysWithoutProductUsage">未使用天数(天)</sys:String>
+    <sys:String x:Key="PercentDaysWithProductUsage">使用天数百分比</sys:String>
+    <sys:String x:Key="CumulativeUsage">累积使用</sys:String>
+    <sys:String x:Key="MaximumUsage1Day">最多使用时间(1天)</sys:String>
+    <sys:String x:Key="AverageUsageAllDays">平均使用时间(所有天数)</sys:String>
+    <sys:String x:Key="AverageUsageDaysUsed">平均使用时间(使用天数)</sys:String>
+    <sys:String x:Key="MinimumUsage1Day">最少使用时间(1天)</sys:String>
+    <sys:String x:Key="PercentOfDaysWithUsageGreaterThanXHours">使用时间&gt;=4小时天数百分比</sys:String>
+    <sys:String x:Key="PercentOfDaysWithUsageLessThanXHours">使用时间&lt;4小时天数百分比</sys:String>
+    <sys:String x:Key="TotalBlowerTime">总通气时间</sys:String>
+    <sys:String x:Key="TimeSpanFromatFull">{0}天 {1}小时 {2}分钟 {3}秒</sys:String>
+    <sys:String x:Key="TimeSpanFromatHour">{0}小时 {1}分钟 {2}秒</sys:String>
+    <sys:String x:Key="TimeSpanFromatMinute">{0}分钟 {1}秒</sys:String>
+    <sys:String x:Key="TimeSpanFromatSecond">{0}秒</sys:String>-->
+    <!--Usage-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--ProductInfo-->
+    <sys:String x:Key="ProductInfo">产品信息</sys:String>
+    <sys:String x:Key="ProductModel">产品型号</sys:String>
+    <!--<sys:String x:Key="SerialNumber">序列号</sys:String>-->
+    <sys:String x:Key="TotalWorkingTime">总运行时间(小时)</sys:String>
+    <sys:String x:Key="ProductVersion">产品版本</sys:String>
+    <!--Usage-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--Menu Button CommonText-->
+    <!--Patient-->
+    <!--<sys:String x:Key="PatientManagement">患者管理</sys:String>
+    <sys:String x:Key="PatientList">患者列表</sys:String>
+    <sys:String x:Key="Refresh">刷新列表</sys:String>
+    <sys:String x:Key="Add">新增</sys:String>
+    <sys:String x:Key="Edit">编辑</sys:String>
+    <sys:String x:Key="Delete">删除</sys:String>
+    <sys:String x:Key="Query">查询</sys:String>
+    <sys:String x:Key="PatientSearch">患者搜索</sys:String>
+    <sys:String x:Key="StatisticsReport">统计报告</sys:String>
+    <sys:String x:Key="CreateReport">生成报告</sys:String>
+    <sys:String x:Key="CreateReportMsg">根据选定条件生成报告</sys:String>
+    <sys:String x:Key="Advise">医嘱</sys:String>
+    <sys:String x:Key="AddAdvise">添加医嘱</sys:String>
+    <sys:String x:Key="AddAdviseMsg">向报告添加医嘱/建议</sys:String>
+    <sys:String x:Key="PrintReport">打印报告</sys:String>
+    <sys:String x:Key="PrintReportMsg">打印报告</sys:String>
+    <sys:String x:Key="SaveAs">保存报告</sys:String>
+    <sys:String x:Key="SaveAsMsg">保存报告到pdf文件</sys:String>
+    <sys:String x:Key="SaveReportFileFilter">(pdf 文件)|*.pdf|所有文件(*.*)|*.*</sys:String>
+    <sys:String x:Key="DeteFormatString">yyyy.MM.dd HH.mm.ss</sys:String>-->
+    <!--Patient-->
+    <!--Doctor-->
+    <!--<sys:String x:Key="DoctorManagement">医生管理</sys:String>
+    <sys:String x:Key="DoctorList">医生列表</sys:String>
+    <sys:String x:Key="DoctorSearch">医生搜索</sys:String>-->
+    <!--Doctor-->
+    <!--DownloadData-->
+    <!--<sys:String x:Key="DownloadData">数据下载</sys:String>
+    <sys:String x:Key="Open">打开</sys:String>
+    <sys:String x:Key="Import">导入</sys:String>
+    <sys:String x:Key="OpenFileDialogTitle">打开Respircare文件</sys:String>
+    <sys:String x:Key="RMSFileFilter">(Respircare flies)|*.TXT</sys:String>-->
+    <!--DownloadData-->
+    <!--Report-->
+    <!--sys:String x:Key="BusinessReport">业务报告</sys:String>
+    <sys:String x:Key="PatientInfoReport">患者信息报告</sys:String>
+    <sys:String x:Key="DoctorInfoReport">医生信息报告</sys:String>-->
+    <!--Report-->
+    <!--Settings-->
+    <!--<sys:String x:Key="Settings">软件设置</sys:String>-->
+    <!--<sys:String x:Key="SystemSettings">系统设置</sys:String>
+
+    <sys:String x:Key="Language">语言</sys:String>
+    <sys:String x:Key="LanguageMessage">请选择显示语言，然后点击[确定]按钮.</sys:String>
+    <sys:String x:Key="LanguageMessage1">语言设置完成后，重启软件生效。</sys:String>-->
+    <!--Settings-->
+
+    <sys:String x:Key="Statistics">统计</sys:String>
+    <sys:String x:Key="Summary">概要</sys:String>
+    <sys:String x:Key="Detailed">详细</sys:String>
+    <sys:String x:Key="ProductConfig">产品配置</sys:String>
+    <sys:String x:Key="StatisticsReport">统计报告</sys:String>
+
+    <!--Patient Statistics-->
+    <!--<sys:String x:Key="TherapyData">治疗数据</sys:String>
+    <sys:String x:Key="Statistics">统计</sys:String>
+    <sys:String x:Key="Summary">概要</sys:String>
+    <sys:String x:Key="Detailed">详细</sys:String>
+    <sys:String x:Key="Prescription">处方</sys:String>-->
+    <!--<sys:String x:Key="ProductConfig">产品配置</sys:String>-->
+    <!--Patient Statistics-->
+    <!-- Search Contain-->
+    <!--<sys:String x:Key="Contain">包含</sys:String>-->
+    <!-- Search Contain-->
+    <!--Buttons-->
+    <!--<sys:String x:Key="Confirm">确定</sys:String>
+    <sys:String x:Key="Cancel">取消</sys:String>
+    <sys:String x:Key="ChannelOptions">通道选项</sys:String>
+    <sys:String x:Key="DeleteSelectedData">删除选中数据</sys:String>
+    <sys:String x:Key="DeleteSelectedDataMsg">确定删除选中的使用数据吗？删除后不能恢复请慎重！</sys:String>-->
+    <!--Buttons-->
+    <!--CommonText-->
+    <sys:String x:Key="StatistisCondition">统计条件 -></sys:String>
+    <sys:String x:Key="TherapyModel">治疗模式</sys:String>
+    <sys:String x:Key="StartTime">开始时间</sys:String>
+    <sys:String x:Key="EndTime">结束时间</sys:String>
+    <sys:String x:Key="PatientInfo">患者信息</sys:String>
+    <sys:String x:Key="StatisticsInfo">统计信息</sys:String>
+    <sys:String x:Key="SummaryInfo">概要信息</sys:String>
+    <sys:String x:Key="DetailedInfo">详细信息</sys:String>
+    <!--CommonText-->
+    <!--Menu Button CommonText-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--Business-->
+    <!--<sys:String x:Key="Event">事件</sys:String>
+    <sys:String x:Key="Snore">鼾声</sys:String>
+    <sys:String x:Key="AI">AI</sys:String>
+    <sys:String x:Key="HI">HI</sys:String>
+    <sys:String x:Key="MaxValue">最大值</sys:String>
+    <sys:String x:Key="P95Value">95th百分比值</sys:String>
+    <sys:String x:Key="MedianValue">中间值</sys:String>
+    <sys:String x:Key="AHI">AHI</sys:String>
+    <sys:String x:Key="AHI1">AHI(次/小时)</sys:String>
+    <sys:String x:Key="AHI2">AHI(次/天)</sys:String>
+    <sys:String x:Key="Pressure">压力</sys:String>
+    <sys:String x:Key="Pressure1">压力(cmH2O)</sys:String>
+    <sys:String x:Key="Flow">流速</sys:String>
+    <sys:String x:Key="Flow1">流速(升/分钟)</sys:String>
+    <sys:String x:Key="Leak">漏气量</sys:String>
+    <sys:String x:Key="Leak1">漏气量(升/分钟)</sys:String>
+    <sys:String x:Key="TidalVolume">潮气量</sys:String>
+    <sys:String x:Key="TidalVolume1">潮气量(毫升)</sys:String>
+    <sys:String x:Key="RespiratoryRate">呼吸频率</sys:String>
+    <sys:String x:Key="RespiratoryRate1">呼吸频率(次/分钟)</sys:String>
+    <sys:String x:Key="MinuteVentilation">分钟通气量</sys:String>
+    <sys:String x:Key="MinuteVentilation1">分钟通气量(升/分钟)</sys:String>
+    <sys:String x:Key="SpO2">血氧饱和度</sys:String>
+    <sys:String x:Key="SpO21">血氧饱和度(%)</sys:String>
+    <sys:String x:Key="PulseRate">脉率</sys:String>
+    <sys:String x:Key="PulseRate1">脉率(次/分钟)</sys:String>
+    <sys:String x:Key="IERatio">吸呼比</sys:String>
+    <sys:String x:Key="IERatio1">吸呼比(1:?)</sys:String>
+    <sys:String x:Key="IPAP">IPAP</sys:String>
+    <sys:String x:Key="IPAP1">IPAP(cmH2O)</sys:String>
+    <sys:String x:Key="EPAP">EPAP</sys:String>
+    <sys:String x:Key="EPAP1">EPAP(cmH2O)</sys:String>
+    <sys:String x:Key="TotalUsage">总使用信息</sys:String>
+    <sys:String x:Key="TotalUsage1">总使用信息(小时/天)</sys:String>
+    <sys:String x:Key="Usage">使用信息</sys:String>-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--Unit-->
+    <!--<sys:String x:Key="TotalUsageUnit">小时/天</sys:String>
+    <sys:String x:Key="UsageUnit">时间段</sys:String>
+    <sys:String x:Key="AHIUnit">次/小时</sys:String>
+    <sys:String x:Key="PressureUnit">cmH2O</sys:String>
+    <sys:String x:Key="FlowUnit">升/分钟</sys:String>
+    <sys:String x:Key="LeakUnit">升/分钟</sys:String>
+    <sys:String x:Key="TidalVolumeUnit">毫升</sys:String>
+    <sys:String x:Key="RespiratoryRateUnit">次/分钟</sys:String>
+    <sys:String x:Key="MinuteVentilationUnit">升/分钟</sys:String>
+    <sys:String x:Key="SpO2Unit">?%</sys:String>
+    <sys:String x:Key="PulseRateUnit">次/分钟</sys:String>
+    <sys:String x:Key="IERatioUnit">1:?</sys:String>
+    <sys:String x:Key="IPAPUnit">cmH2O</sys:String>
+    <sys:String x:Key="EPAPUnit">cmH2O</sys:String>-->
+</ResourceDictionary>
